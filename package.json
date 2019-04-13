@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server:build": "gulp",
+    "start:dev": "node ./dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,17 @@
   "bugs": {
     "url": "https://github.com/hxuena/archtest/issues"
   },
-  "homepage": "https://github.com/hxuena/archtest#readme"
+  "homepage": "https://github.com/hxuena/archtest#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "koa": "^2.7.0",
+    "lodash": "^4.17.11"
+  }
 }
